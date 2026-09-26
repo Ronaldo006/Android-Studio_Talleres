@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convertidor de Moneda"
+        android:textSize="20sp"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cantidad:" />
+
+    <EditText
+        android:id="@+id/campoCantidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Moneda de origen:" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupOrigen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/radioOrigenCOP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COP"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radioOrigenUSD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USD"
+            android:layout_marginStart="16dp" />
+
+        <RadioButton
+            android:id="@+id/radioOrigenEUR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EUR"
+            android:layout_marginStart="16dp" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Moneda de destino:" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupDestino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="24dp">
+
+        <RadioButton
+            android:id="@+id/radioDestinoCOP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COP" />
+
+        <RadioButton
+            android:id="@+id/radioDestinoUSD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USD"
+            android:checked="true"
+            android:layout_marginStart="16dp" />
+
+        <RadioButton
+            android:id="@+id/radioDestinoEUR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EUR"
+            android:layout_marginStart="16dp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/botonConvertir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Convertir" />
+
+    <TextView
+        android:id="@+id/etiResultadoConversion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textSize="18sp"
+        android:gravity="center" />
+
+</LinearLayout>

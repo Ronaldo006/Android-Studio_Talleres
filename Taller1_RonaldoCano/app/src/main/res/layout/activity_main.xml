@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/etiTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hola Bienvenido a Mi App"
+        android:textSize="22sp"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dato:" />
+
+    <EditText
+        android:id="@+id/campoDato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/botonOk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aceptar"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:id="@+id/etiMensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/botonConversor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Convertidor de Moneda"
+        android:layout_marginTop="32dp" />
+
+    <Button
+        android:id="@+id/botonCalculadora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculadora de Créditos"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
